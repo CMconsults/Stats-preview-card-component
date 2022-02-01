@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// Primary
+
+$Very-dark-blueMainBackground: hsl(233, 47%, 7%);
+$Dark-desaturatedBlueCardBackground: hsl(244, 38%, 16%);
+$Soft-violetAccent: hsl(277, 64%, 61%);
+
+// Neutral
+
+$White : hsl(0, 0%, 100%); //(main heading, stats)
+$SlightlyTransparentWhite : hsla(0, 0%, 100%, 0.75); //(main paragraph)
+$SlightlyTransparentWhite : hsla(0, 0%, 100%, 0.6); //(stat headings)
+
+
+body{
+    background-color: $Very-dark-blueMainBackground;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: $Dark-desaturatedBlueCardBackground;
+    max-width: 1000px;
+    max-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.column-1{
+    padding-left: 60px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1{
+        font-size: 32px;
+        font-family: 'Inter', sans-serif;
+        
+        color: $White;
+        .colored-title{
+            color: $Soft-violetAccent;
+        }
+    }
+    p{
+        color: $SlightlyTransparentWhite;
+        font-family: 'inter', sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .metrics{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        h3{
+            color: $White;
+            font-family: 'inter', sans-serif;
+            font-size: 1.3rem;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: $SlightlyTransparentWhite;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 0.7rem;
+            margin: 0;
+            padding: 0;
+            
+        }
+    }
+}
+
+.column-2{
+    // background-image: url(./images/image-header-desktop.jpg);
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    // background: $Soft-violetAccent;
+    width: 1300px;
+    border-radius: 0 10px 10px 0;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: $Soft-violetAccent;
+    opacity: 0.55;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    }
+
+
+}
