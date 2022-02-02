@@ -106,7 +106,7 @@ body {
             justify-content: space-evenly;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 100%;
     margin: auto;
   }
@@ -128,11 +128,12 @@ body {
   }
   .column-1 h1 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
   }
   .column-1 p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     margin-top: 0;
   }
   .column-1 .metrics {
