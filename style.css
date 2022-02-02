@@ -80,7 +80,6 @@ body {
 .column-2 {
   background-image: url(./images/image-header-desktop.jpg);
   background-size: cover;
-  position: relative;
   overflow: hidden;
   width: 1300px;
   border-radius: 0 10px 10px 0;
@@ -102,8 +101,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 400px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    max-width: 300px;
     max-height: 100%;
+    margin: auto;
   }
   .column-1 {
     padding: 20px;
@@ -114,20 +119,21 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .column-1 .item {
+    margin-bottom: 28px;
   }
   .column-1 h1 {
     text-align: center;
-    font-size: 1.3rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    font-size: 1.8rem;
   }
   .column-1 p {
     text-align: center;
     font-size: 0.8rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    margin-top: 0;
   }
   .column-1 .metrics {
     -webkit-box-orient: vertical;
@@ -141,12 +147,13 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    margin-top: 0;
   }
-  .column-1 .metrics1, .column-1 .metrics2, .column-1 .metrics3 {
+  .column-1 .metrics1, .column-1 .metrics2 {
     margin-bottom: 20px;
+  }
+  .column-2 {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
