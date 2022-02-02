@@ -61,7 +61,7 @@ body {
   margin-top: 50px;
 }
 
-.column-1 .metrics h3 {
+.column-1 .metrics h2 {
   color: white;
   font-family: 'inter', sans-serif;
   font-size: 1.3rem;
@@ -103,7 +103,7 @@ body {
         align-content: center;
     max-width: 350px;
     max-height: 100%;
-    margin: auto;
+    margin: 5rem auto;
   }
   .column-1 {
     padding: 20px;
