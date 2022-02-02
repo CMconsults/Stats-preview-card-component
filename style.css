@@ -80,16 +80,11 @@ body {
 .column-2 {
   background-image: url(./images/image-header-desktop.jpg);
   background-size: cover;
+  background-color: #aa5cdb;
   overflow: hidden;
   width: 1300px;
   border-radius: 0 10px 10px 0;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background: #aa5cdb;
-  opacity: 0.55;
+  background-blend-mode: multiply;
 }
 
 @media only screen and (max-width: 768px) {

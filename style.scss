@@ -79,19 +79,14 @@ body{
     
     background-image: url(./images/image-header-desktop.jpg);
     background-size: cover;
-    // position: relative;
+    background-color: $Soft-violetAccent;
     overflow: hidden;
-    // background: $Soft-violetAccent;
     width: 1300px;
     border-radius: 0 10px 10px 0;
+    background-blend-mode: multiply;
 }
 
-.overlay{
-    width: 100%;
-    height: 100%;
-    background: $Soft-violetAccent;
-    opacity: 0.55;
-}
+
 
 @media only screen and (max-width: 768px){
     .container{
